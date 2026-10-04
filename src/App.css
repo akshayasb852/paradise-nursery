@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; }
+
+/* Landing page background image */
+.landing-page {
+  min-height: 100vh;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.landing-content {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  max-width: 600px;
+  border-radius: 12px;
+}
+.landing-content h1 { font-size: 3rem; margin-top: 0; }
+.get-started-btn {
+  background: #2e7d32; color: #fff; border: none;
+  padding: 12px 32px; font-size: 1.1rem; border-radius: 6px; cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #2e7d32; color: #fff; padding: 12px 24px;
+}
+.brand { margin: 0; }
+.nav-links a { color: #fff; margin-left: 24px; text-decoration: none; font-weight: bold; }
+.cart-count {
+  background: #fff; color: #2e7d32; border-radius: 50%;
+  padding: 2px 8px; margin-left: 4px;
+}
+
+/* Product grid */
+.product-page { padding: 20px 40px; }
+.category-title { border-bottom: 2px solid #2e7d32; padding-bottom: 6px; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+.product-card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; text-align: center; }
+.product-card img { width: 100%; border-radius: 6px; }
+.price { font-weight: bold; color: #2e7d32; }
+.add-btn { background: #2e7d32; color: #fff; border: none; padding: 8px 14px; border-radius: 4px; cursor: pointer; }
+.add-btn:disabled { background: #aaa; cursor: not-allowed; }
+
+/* Cart */
+.cart-page { padding: 20px 40px; }
+.cart-item { display: flex; gap: 20px; border: 1px solid #ddd; border-radius: 8px; padding: 12px; margin-bottom: 14px; }
+.cart-item img { width: 110px; height: 110px; object-fit: cover; border-radius: 6px; }
+.qty-controls { display: flex; align-items: center; gap: 10px; }
+.qty-controls button { width: 30px; height: 30px; cursor: pointer; }
+.delete-btn { background: #c62828; color: #fff; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; }
+.cart-actions { display: flex; gap: 14px; margin-top: 20px; }
+.cart-actions button { padding: 10px 20px; cursor: pointer; }
